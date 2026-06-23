@@ -18,7 +18,7 @@ sensor = dht.DHT22(Pin(15))
 print("Connecting to WiFi(Wokwi Virtual Wifi)", end="")
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
-wlan.connect('Wokwi-GUEST', '')
+wlan.connect('iPhone', 'aa')
 while not wlan.isconnected():
   print(".", end="")
   time.sleep(0.1)
